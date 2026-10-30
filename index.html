@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Saikiran | Cloud & DevOps</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #07152e, #123c68, #091729);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      text-align: center;
+      padding: 55px 35px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 24px;
+      background: rgba(255,255,255,0.06);
+      box-shadow: 0 15px 45px rgba(0,0,0,0.35);
+    }
+
+    .tag {
+      color: #8bddff;
+      letter-spacing: 4px;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 76px);
+      margin-bottom: 15px;
+    }
+
+    h1 span {
+      color: #50d8ff;
+    }
+
+    h2 {
+      font-size: clamp(20px, 3vw, 32px);
+      font-weight: 400;
+      color: #d5e9ff;
+      margin-bottom: 18px;
+    }
+
+    .description {
+      color: #b7cce1;
+      font-size: 17px;
+      margin-bottom: 45px;
+    }
+
+    .technologies {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 18px;
+      padding: 30px 15px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: rgba(80,216,255,0.15);
+    }
+
+    .card .symbol {
+      font-size: 42px;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #c1d3e7;
+      line-height: 1.6;
+    }
+
+    .footer {
+      margin-top: 45px;
+      font-size: 17px;
+      letter-spacing: 2px;
+      color: #8bddff;
+    }
+
+    .print-btn {
+      margin-top: 35px;
+      padding: 14px 35px;
+      border: none;
+      border-radius: 8px;
+      background: #51d8ff;
+      color: #07152e;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .print-btn:hover {
+      background: #a0edff;
+    }
+
+    @media (max-width: 700px) {
+      .technologies {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .container {
+        padding: 35px 15px;
+      }
+    }
+
+    @media print {
+      @page {
+        size: A4 landscape;
+        margin: 10mm;
+      }
+
+      html, body {
+        width: 100%;
+        min-height: 0;
+        background: #07152e !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      body {
+        display: block;
+        padding: 0;
+      }
+
+      .container {
+        box-shadow: none;
+        padding: 25px;
+        break-inside: avoid;
+      }
+
+      .print-btn {
+        display: none;
+      }
+
+      .card {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <div class="tag">
+      CLOUD ENGINEERING • AUTOMATION • INNOVATION
+    </div>
+
+    <h1>Welcome <span>Saikiran</span></h1>
+
+    <h2>Cloud Computing & DevOps Concepts</h2>
+
+    <p class="description">
+      Building, Automating, Deploying and Managing
+      Modern Cloud Infrastructure
+    </p>
+
+    <section class="technologies">
+
+      <div class="card">
+        <div class="symbol">⚙️</div>
+        <h3>DevOps</h3>
+        <p>
+          Git • GitHub • Jenkins<br>
+          Docker • Kubernetes<br>
+          Terraform • CI/CD
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="symbol">☁️</div>
+        <h3>Azure</h3>
+        <p>
+          Azure Virtual Machines<br>
+          Azure Networking<br>
+          AKS • Azure DevOps
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="symbol">🌐</div>
+        <h3>AWS</h3>
+        <p>
+          EC2 • S3 • VPC<br>
+          IAM • Lambda<br>
+          EKS • CloudWatch
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="symbol">🖧</div>
+        <h3>OCI</h3>
+        <p>
+          Compute • VCN<br>
+          OKE • Storage<br>
+          IAM • Terraform • DR
+        </p>
+      </div>
+
+    </section>
+
+    <div class="footer">
+      LEARN • BUILD • DEPLOY • AUTOMATE
+    </div>
+
+    <button class="print-btn" onclick="window.print()">
+      🖨 Print Welcome Page
+    </button>
+
+  </main>
+
+</body>
+</html>
