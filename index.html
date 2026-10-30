@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome Saikiran | Cloud & DevOps</title>
+  <title>Welcome Muthyala | Cloud & DevOps</title>
 
   <style>
     * {
@@ -16,7 +16,12 @@
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       min-height: 100vh;
-      background: linear-gradient(135deg, #07152e, #123c68, #091729);
+      background: linear-gradient(
+        135deg,
+        #052e1b,
+        #116b42,
+        #082b1d
+      );
       color: white;
       display: flex;
       justify-content: center;
@@ -29,14 +34,14 @@
       max-width: 1100px;
       text-align: center;
       padding: 55px 35px;
-      border: 1px solid rgba(255,255,255,0.2);
+      border: 1px solid rgba(134, 239, 172, 0.3);
       border-radius: 24px;
-      background: rgba(255,255,255,0.06);
-      box-shadow: 0 15px 45px rgba(0,0,0,0.35);
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
     }
 
     .tag {
-      color: #8bddff;
+      color: #86efac;
       letter-spacing: 4px;
       font-size: 14px;
       margin-bottom: 25px;
@@ -48,20 +53,22 @@
     }
 
     h1 span {
-      color: #50d8ff;
+      color: #4ade80;
+      text-shadow: 0 0 20px rgba(74, 222, 128, 0.35);
     }
 
     h2 {
       font-size: clamp(20px, 3vw, 32px);
       font-weight: 400;
-      color: #d5e9ff;
+      color: #dcfce7;
       margin-bottom: 18px;
     }
 
     .description {
-      color: #b7cce1;
+      color: #bbf7d0;
       font-size: 17px;
       margin-bottom: 45px;
+      line-height: 1.7;
     }
 
     .technologies {
@@ -71,8 +78,8 @@
     }
 
     .card {
-      background: rgba(255,255,255,0.09);
-      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(134, 239, 172, 0.25);
       border-radius: 18px;
       padding: 30px 15px;
       transition: transform 0.3s, background 0.3s;
@@ -80,7 +87,9 @@
 
     .card:hover {
       transform: translateY(-8px);
-      background: rgba(80,216,255,0.15);
+      background: rgba(74, 222, 128, 0.18);
+      border-color: #4ade80;
+      box-shadow: 0 10px 25px rgba(74, 222, 128, 0.15);
     }
 
     .card .symbol {
@@ -91,19 +100,20 @@
     .card h3 {
       font-size: 24px;
       margin-bottom: 12px;
+      color: #86efac;
     }
 
     .card p {
       font-size: 14px;
-      color: #c1d3e7;
-      line-height: 1.6;
+      color: #dcfce7;
+      line-height: 1.8;
     }
 
     .footer {
       margin-top: 45px;
       font-size: 17px;
       letter-spacing: 2px;
-      color: #8bddff;
+      color: #86efac;
     }
 
     .print-btn {
@@ -111,15 +121,17 @@
       padding: 14px 35px;
       border: none;
       border-radius: 8px;
-      background: #51d8ff;
-      color: #07152e;
+      background: #4ade80;
+      color: #052e1b;
       font-size: 16px;
       font-weight: bold;
       cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
     }
 
     .print-btn:hover {
-      background: #a0edff;
+      background: #86efac;
+      transform: scale(1.05);
     }
 
     @media (max-width: 700px) {
@@ -129,6 +141,22 @@
 
       .container {
         padding: 35px 15px;
+      }
+
+      .tag {
+        letter-spacing: 2px;
+        font-size: 11px;
+      }
+
+      .footer {
+        font-size: 13px;
+        letter-spacing: 1px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .technologies {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -141,7 +169,7 @@
       html, body {
         width: 100%;
         min-height: 0;
-        background: #07152e !important;
+        background: #052e1b !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
@@ -157,12 +185,12 @@
         break-inside: avoid;
       }
 
-      .print-btn {
-        display: none;
-      }
-
       .card {
         break-inside: avoid;
+      }
+
+      .print-btn {
+        display: none;
       }
     }
   </style>
@@ -176,9 +204,13 @@
       CLOUD ENGINEERING • AUTOMATION • INNOVATION
     </div>
 
-    <h1>Welcome <span>Saikiran</span></h1>
+    <h1>
+      Welcome <span>Saikiran</span>
+    </h1>
 
-    <h2>Cloud Computing & DevOps Concepts & saikiran AI</h2>
+    <h2>
+      Cloud Computing & DevOps Concepts & Saikiran AI
+    </h2>
 
     <p class="description">
       Building, Automating, Deploying and Managing
@@ -187,6 +219,7 @@
 
     <section class="technologies">
 
+      <!-- DevOps Card -->
       <div class="card">
         <div class="symbol">⚙️</div>
         <h3>DevOps</h3>
@@ -197,6 +230,7 @@
         </p>
       </div>
 
+      <!-- Azure Card -->
       <div class="card">
         <div class="symbol">☁️</div>
         <h3>Azure</h3>
@@ -207,6 +241,7 @@
         </p>
       </div>
 
+      <!-- AWS Card -->
       <div class="card">
         <div class="symbol">🌐</div>
         <h3>AWS</h3>
@@ -217,6 +252,7 @@
         </p>
       </div>
 
+      <!-- OCI Card -->
       <div class="card">
         <div class="symbol">🖧</div>
         <h3>OCI</h3>
@@ -233,7 +269,11 @@
       LEARN • BUILD • DEPLOY • AUTOMATE
     </div>
 
-    <button class="print-btn" onclick="window.print()">
+    <button
+      class="print-btn"
+      type="button"
+      onclick="window.print()"
+    >
       🖨 Print Welcome Page
     </button>
 
